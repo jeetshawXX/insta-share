@@ -1,0 +1,40 @@
+# ==========================================
+# InstaShare Root - .gitignore
+# ==========================================
+
+# Dependencies
+node_modules/
+node_modules
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment Variables
+.env
+.env.local
+.env*.local
+
+# Build Output
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Misc
+.cache/
+*.pem
+
+
+docs/

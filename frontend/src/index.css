@@ -1,0 +1,329 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Deep space navy background */
+    --background: 222 30% 7%;
+    --foreground: 220 40% 98%;
+
+    /* Glass cards with subtle tint */
+    --card: 220 25% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Neon cyan primary */
+    --primary: 180 100% 50%;
+    --primary-foreground: 220 30% 6%;
+
+    /* Electric magenta secondary */
+    --secondary: 320 100% 60%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted with slight glow */
+    --muted: 220 20% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Accent purple-blue */
+    --accent: 210 100% 50%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 90% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders with glow */
+    --border: 220 25% 20%;
+    --input: 220 25% 15%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-cyber: linear-gradient(
+      135deg,
+      hsla(154, 28%, 52%, 0.592),
+      hsla(198, 80%, 28%, 0.319)
+    );
+    --gradient-glow: linear-gradient(
+      180deg,
+      hsla(180, 56%, 66%, 0.1),
+      transparent
+    );
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(180, 26%, 81%),
+      hsl(0, 0%, 80%)
+    );
+    --gradient-secondary: linear-gradient(
+      135deg,
+      hsl(68, 87%, 32%),
+      hsl(70, 53%, 57%)
+    );
+
+    /* InstaShare logo gradient: vivid, Instagram-like orange -> magenta -> purple (HSL) */
+    --gradient-instalogo: linear-gradient(
+      135deg,
+      hsl(147, 13%, 58%),
+      hsl(157, 82%, 34%),
+      hsla(51, 65%, 71%, 0.75)
+    );
+
+    /* 
+    --gradient-bg-overlay: linear-gradient(
+      -45deg,
+      hsl(190 90% 65% / 0.05) 0%,
+      hsl(220 95% 70% / 0.06) 25%,
+      hsl(210 90% 75% / 0.04) 50%,
+      hsl(180 90% 70% / 0.05) 75%,
+      hsl(190 90% 65% / 0.05) 100%
+    ); */
+
+    /* --gradient-bg-animated: radial-gradient(
+      ellipse 120% 80% at var(--x, 50%) var(--y, 50%),
+      hsl(200 100% 70% / 0.1),
+      transparent 60%
+    ); */
+
+    /* Shadows with neon glow */
+    /* --shadow-neon: 0 0 20px hsl(180 100% 50% / 0.3),
+      0 0 40px hsl(180 100% 50% / 0.1);
+    --shadow-magenta: 0 0 20px hsl(320 100% 60% / 0.3),
+      0 0 40px hsl(320 100% 60% / 0.1);
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+}
+
+@layer utilities {
+  /* Glassmorphism utilities */
+  .glass {
+    @apply bg-card/30 backdrop-blur-xl border border-border/50;
+  }
+
+  .glass-strong {
+    @apply bg-card/50 backdrop-blur-2xl border border-border/70;
+  }
+
+  /* Neon glow effects */
+  .glow-cyan {
+    box-shadow: var(--shadow-neon);
+  }
+
+  .glow-magenta {
+    box-shadow: var(--shadow-magenta);
+  }
+
+  /* Gradient text */
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .text-gradient-secondary {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-secondary);
+  }
+
+  .text-gradient-instalogo {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-instalogo);
+  }
+
+  /* Animated gradient background */
+  .bg-gradient-cyber {
+    background: var(--gradient-cyber);
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-muted/30;
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-primary/40;
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/60;
+  }
+
+  /* Homepage background */
+  .bg-gradient-homepage {
+    background: var(--gradient-bg-main);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bg-gradient-homepage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-bg-overlay);
+    animation: gradient-shift 20s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .bg-gradient-homepage::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-bg-animated);
+    animation: gradient-move 25s ease-in-out infinite;
+    pointer-events: none;
+    opacity: 0.7;
+  }
+
+  @keyframes gradient-shift {
+    0%,
+    100% {
+      opacity: 1;
+      transform: rotate(0deg) scale(1);
+    }
+    25% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+      transform: rotate(180deg) scale(1.05);
+    }
+    75% {
+      opacity: 0.85;
+    }
+  }
+
+  @keyframes gradient-move {
+    0%,
+    100% {
+      --x: 20%;
+      --y: 30%;
+    }
+    25% {
+      --x: 80%;
+      --y: 20%;
+    }
+    50% {
+      --x: 70%;
+      --y: 80%;
+    }
+    75% {
+      --x: 30%;
+      --y: 70%;
+    }
+  }
+
+  /* Floating orbs effect */
+  .floating-orbs::before,
+  .floating-orbs::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .floating-orbs::before {
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, hsl(190 90% 65% / 0.2), transparent);
+    top: -200px;
+    right: -200px;
+    animation: float-orb-1 30s ease-in-out infinite;
+  }
+
+  .floating-orbs::after {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, hsl(220 95% 70% / 0.22), transparent);
+    bottom: -150px;
+    left: -150px;
+    animation: float-orb-2 25s ease-in-out infinite reverse;
+  }
+
+  @keyframes float-orb-1 {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(-100px, 150px) scale(1.1);
+    }
+    66% {
+      transform: translate(100px, -100px) scale(0.9);
+    }
+  }
+
+  @keyframes float-orb-2 {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(150px, -80px) scale(1.15);
+    }
+    66% {
+      transform: translate(-80px, 120px) scale(0.85);
+    }
+  }
+
+  /* Chat background with image */
+  .chat-background {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .chat-background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/instashare-background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .chat-background > * {
+    position: relative;
+    z-index: 1;
+  }
+}
