@@ -7,7 +7,7 @@
   "author": "Jeet Shaw",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/jeetshawXX/insta-share/"
   },
   "scripts": {
     "dev": "vite",
