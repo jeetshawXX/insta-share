@@ -234,7 +234,7 @@ export default function Room() {
     // Save the current room code to localStorage
     localStorage.setItem('lastRoomCode', roomCode);
 
-    const storedName = localStorage.getItem('displayName');
+    const storedName = localStorage.getItem(`displayName_${roomCode}`);
     if (!storedName) {
       // Show username dialog if no username exists
       setShowUsernameDialog(true);
@@ -259,7 +259,7 @@ export default function Room() {
 
   // Handle username set from dialog
   const handleUsernameSet = (username: string) => {
-    localStorage.setItem('displayName', username);
+    localStorage.setItem(`displayName_${roomCode}`, username);
     setUserName(username);
     setShowUsernameDialog(false);
     
