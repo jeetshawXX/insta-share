@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/jeetshawXX/insta-share/main/frontend/public/instashare-logo.png" alt="InstaShare logo" width="120" />
-  <h1>InstaShare href="https://insta-share-ten.vercel.app/"</h1>
+  <h1>InstaShare <a  href="https://insta-share-ten.vercel.app/"</a> </h1>
   <p>
     <a ><strong>🌐 Live Demo</strong></a>
   </p>
