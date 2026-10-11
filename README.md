@@ -123,10 +123,6 @@ insta-share/
         └── supabase.ts  # Supabase client setup
 ```
 
-## 🎬 Demo video
-
-A demo video is available in the repository: [Watch or download the InstaShare demo](https://github.com/jeetshawXX/insta-share/blob/main/frontend/public/instashare-demo-video.mp4).
-
 ## 🔐 Security & privacy
 
 - Keep Supabase keys, database credentials, and other secrets in environment variables.
@@ -155,7 +151,6 @@ bun run start
 
 ## 🗺️ Useful links
 
-- **Live application:** https://insta-share-ten.vercel.app/
 - **Repository:** https://github.com/jeetshawXX/insta-share
 - **Workflow guide:** https://insta-share-ten.vercel.app/workflow
 - **FAQ:** https://insta-share-ten.vercel.app/faq
