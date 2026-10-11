@@ -1,13 +1,24 @@
 <!-- InstaShare README -->
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/jeetshawXX/insta-share/main/frontend/public/instashare-logo.png" alt="InstaShare logo" width="120" />
-  <h1>InstaShare <a  href="https://insta-share-ten.vercel.app/"</a> </h1>
+  <a href="https://insta-share-ten.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="https://raw.githubusercontent.com/jeetshawXX/insta-share/main/frontend/public/instashare-logo.png" alt="InstaShare logo" width="120" />
+  </a>
+
+  <h1>
+    <a href="https://insta-share-ten.vercel.app/" target="_blank" rel="noopener noreferrer">InstaShare</a>
+  </h1>
+
   <p>
-    <a ><strong>🌐 Live Demo</strong></a>
+    <a href="https://insta-share-ten.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <strong>🌐 Live Demo</strong>
+    </a>
   </p>
-  <p><strong>Real-time Collab Room. Code sharing. Secure room.</strong></p>
-  <p>Collaborate instantly with a simple room-based space for conversations and sharing code.</p>
+
+  <p><strong>Real-time Collaboration. Code Sharing. Secure Rooms.</strong></p>
+
+  <p>Collaborate instantly in a simple, room-based space for conversations and code sharing.</p>
+
   
   <p>
     <img alt="React" src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black" />
