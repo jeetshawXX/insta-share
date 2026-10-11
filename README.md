@@ -8,7 +8,6 @@
   <p>
     <a href="https://insta-share-ten.vercel.app/"><strong>🌐 Live Demo</strong></a>
     ·
-    <a href="https://github.com/jeetshawXX/insta-share"><strong>📦 Source Code</strong></a>
   </p>
   <p>
     <img alt="React" src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black" />
