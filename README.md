@@ -7,7 +7,6 @@
   <p>Collaborate instantly with a simple room-based space for conversations and sharing code.</p>
   <p>
     <a href="https://insta-share-ten.vercel.app/"><strong>🌐 Live Demo</strong></a>
-    ·
   </p>
   <p>
     <img alt="React" src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black" />
