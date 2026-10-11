@@ -45,15 +45,6 @@
 | Data integration | Supabase |
 | Code presentation | Prism.js |
 
-## 🖥️ Try the live app
-
-Visit **[insta-share-ten.vercel.app](https://insta-share-ten.vercel.app/)** to explore InstaShare.
-
-1. Open the live application.
-2. Follow the on-screen flow to create or join a room.
-3. Share the room with collaborators and use the tools available inside it.
-
-The exact available actions may depend on the current deployment and configuration.
 
 ## 🛠️ Run locally
 
