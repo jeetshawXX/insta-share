@@ -140,7 +140,6 @@ bun run start
 
 ## 🗺️ Useful links
 
-- **Repository:** https://github.com/jeetshawXX/insta-share
 - **Workflow guide:** https://insta-share-ten.vercel.app/workflow
 - **FAQ:** https://insta-share-ten.vercel.app/faq
 - **Privacy policy:** https://insta-share-ten.vercel.app/privacy-policy
