@@ -3,11 +3,12 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/jeetshawXX/insta-share/main/frontend/public/instashare-logo.png" alt="InstaShare logo" width="120" />
   <h1>InstaShare</h1>
-  <p><strong>Real-time Collab Room. Code sharing. Secure room.</strong></p>
-  <p>Collaborate instantly with a simple room-based space for conversations and sharing code.</p>
   <p>
     <a href="https://insta-share-ten.vercel.app/"><strong>🌐 Live Demo</strong></a>
   </p>
+  <p><strong>Real-time Collab Room. Code sharing. Secure room.</strong></p>
+  <p>Collaborate instantly with a simple room-based space for conversations and sharing code.</p>
+  
   <p>
     <img alt="React" src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black" />
     <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white" />
