@@ -21,24 +21,6 @@
 
 ---
 
-## 📸 Screenshots
-
-### Landing page
-<p align="center">
-  <a href="https://insta-share-ten.vercel.app/">
-    <img src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://insta-share-ten.vercel.app/" alt="InstaShare landing page screenshot" width="100%" />
-  </a>
-</p>
-
-### Room experience
-<p align="center">
-  <a href="https://insta-share-ten.vercel.app/">
-    <img src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://insta-share-ten.vercel.app/room/demo" alt="InstaShare room interface preview" width="100%" />
-  </a>
-</p>
-
-> Screenshots are generated from the live deployment. Open the demo to explore the current interface and create a real room.
-
 ## ✨ Overview
 
 **InstaShare** is a web-based, room-oriented collaboration app designed to make it easy to connect and share code in real time. The project includes a React frontend and a TypeScript/Node.js backend, with Socket.IO for real-time communication and Supabase integration.
