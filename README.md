@@ -2,9 +2,9 @@
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/jeetshawXX/insta-share/main/frontend/public/instashare-logo.png" alt="InstaShare logo" width="120" />
-  <h1>InstaShare</h1>
+  <h1>InstaShare href="https://insta-share-ten.vercel.app/"</h1>
   <p>
-    <a href="https://insta-share-ten.vercel.app/"><strong>🌐 Live Demo</strong></a>
+    <a ><strong>🌐 Live Demo</strong></a>
   </p>
   <p><strong>Real-time Collab Room. Code sharing. Secure room.</strong></p>
   <p>Collaborate instantly with a simple room-based space for conversations and sharing code.</p>
